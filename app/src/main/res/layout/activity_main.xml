@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anarchy.banana.widget.BananaLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anarchy.banana.MainActivity">
+
+    <com.anarchy.banana.widget.CircleImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/up"
+        android:src="@drawable/a"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <android.support.v4.widget.CircleImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/up_halo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <com.anarchy.banana.widget.Banana
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/up"
+        android:id="@+id/banana"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_banana_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.anarchy.banana.widget.BananaLayout>
