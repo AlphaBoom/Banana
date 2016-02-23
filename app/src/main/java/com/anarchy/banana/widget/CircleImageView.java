@@ -223,7 +223,7 @@ public class CircleImageView extends ImageView {
         mBitmapPaint.setAntiAlias(true);
         mBitmapPaint.setShader(mBitmapShader);
 
-        mBorderPaint.setStyle(Paint.Style.STROKE);
+        mBorderPaint.setStyle(Paint.Style.FILL);
         mBorderPaint.setAntiAlias(true);
         mBorderPaint.setColor(mBorderColor);
         mBorderPaint.setStrokeWidth(mBorderWidth);

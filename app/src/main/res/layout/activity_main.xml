@@ -3,27 +3,54 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
     android:layout_height="match_parent"
+    android:id="@+id/banana_layout"
     tools:context="com.anarchy.banana.MainActivity">
 
     <com.anarchy.banana.widget.CircleImageView
         android:layout_centerInParent="true"
         android:id="@+id/up"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/a"
-        android:layout_width="80dp"
-        android:layout_height="80dp"/>
-    <android.support.v4.widget.CircleImageView
-        android:layout_centerInParent="true"
-        android:id="@+id/up_halo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
     <com.anarchy.banana.widget.Banana
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:layout_below="@id/up"
         android:id="@+id/banana"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/icon_banana_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/banana_multiple"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/banana"
+        android:src="@mipmap/banana_x5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:onClick="onMinusBanana"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@id/banana"
+        android:layout_toLeftOf="@id/banana"
+        android:src="@mipmap/icon_banana_minus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:onClick="onPlusBanana"
+        android:layout_toRightOf="@id/banana"
+        android:layout_alignBottom="@id/banana"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/icon_banana_plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
 </com.anarchy.banana.widget.BananaLayout>
